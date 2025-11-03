@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class TryoutUKL4 {
+    static double htngvolume(double jariJari, double tinggi) {
+        double volume = 22.0/7.0 * jariJari * jariJari * tinggi;
+        return volume;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner masukan = new Scanner (System.in);
+        double jarijari, tinggi, hasil;
+        System.out.println("Masukan jari jari tabung = ");
+        jarijari = masukan.nextDouble();
+        
+        System.out.println("Masukan tinggi tabung = ");
+        tinggi = masukan.nextDouble();
+        hasil = htngvolume(jarijari, tinggi);
+        System.out.println("Hasil dari perhitungan volume diatas adalah = "+hasil);
+    }
+}
